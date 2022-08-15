@@ -8,7 +8,7 @@ import { Item } from "./types/Item";
 import { getCurrentMonth, FilterListByMonth } from "./helpers/dateFilter";
 import { TableArea } from "./components/TabelArea/idex";
 import { InfoArea } from "./components/InfoArea";
-import { InputNovo } from "./components/InputNovo";
+import { InputArea } from "./components/InputNovo";
 
 const App = () => {
   //lista geral
@@ -70,7 +70,7 @@ const App = () => {
         />
 
         {/* Área de inserção */}
-        <InputNovo onAdd={handleAddItem} />
+        <InputArea onAdd={handleAddItem} />
 
         {/* Tabela de itens */}
         <TableArea list={filteredList} />
