@@ -52,7 +52,7 @@ const App = () => {
   const handleAddItem = (item: Item) => {
     let newList = [...list];
     newList.push(item);
-    setList(newList);
+    stList(newList);
   };
 
   return (

@@ -3,19 +3,19 @@ import {Item} from '../../types/Item'
 import { Category, Value } from '../TabelItem/styles';
 
 type Props = {
-    onAdd: (item: Item)
+    onAdd: (item: Item) => void;
 }
 
 export const InputNovo = ({onAdd}: Props) => {
 
 const handleAddEvent = () => {
 let newItem: Item = {
-    date: new Date ()
-    category: ''
-    title: ''
-    Value: 
+    date: new Date (2022, 7 ,27),
+    category: 'food',
+    title: 'Item de teste',
+    value: 250.25
 };
-    onAdd();
+    onAdd(newItem);
 }
 
     return(
